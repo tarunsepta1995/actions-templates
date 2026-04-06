@@ -1,0 +1,13 @@
+name: Test Actions Template
+on:
+    workflow_call:
+jobs:
+    build:
+        runs-on: self-hosted
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Print Hello
+              run : |
+                echo "Welcome to Actions Template"
+                
